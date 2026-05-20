@@ -1,0 +1,17 @@
+{
+  "name": "path-gate",
+  "version": "1.0.0",
+  "description": "Pi extension that gates file paths outside the workspace",
+  "dependencies": {
+    "js-yaml": "^4.1.0"
+  },
+  "pi": {
+    "extensions": [
+      "./index.ts"
+    ]
+  },
+  "devDependencies": {
+    "@types/js-yaml": "^4.0.9",
+    "@types/node": "^25.9.1"
+  }
+}
