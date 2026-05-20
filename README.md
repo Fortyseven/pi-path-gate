@@ -1,4 +1,4 @@
-# path-gate
+# pi-path-gate
 
 A Pi extension that gates file-system tool calls referencing paths **outside the current workspace**.
 

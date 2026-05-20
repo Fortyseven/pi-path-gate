@@ -1,17 +1,26 @@
 {
-  "name": "path-gate",
+  "name": "pi-path-gate",
   "version": "1.0.0",
   "description": "Pi extension that gates file paths outside the workspace",
+  "keywords": ["pi-package"],
+  "main": "index.ts",
+  "files": ["index.ts", "lib.ts", "config.ts"],
+  "scripts": {
+    "test": "node --experimental-strip-types --test tests/*.test.ts"
+  },
   "dependencies": {
     "js-yaml": "^4.1.0"
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*"
+  },
+  "devDependencies": {
+    "@types/js-yaml": "^4.0.9",
+    "@types/node": "^25.9.1"
   },
   "pi": {
     "extensions": [
       "./index.ts"
     ]
-  },
-  "devDependencies": {
-    "@types/js-yaml": "^4.0.9",
-    "@types/node": "^25.9.1"
   }
 }
